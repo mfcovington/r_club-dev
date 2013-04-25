@@ -1,3 +1,4 @@
+_site/*
 _codedump/*
 _classdocs/*
 .Rapp.history
