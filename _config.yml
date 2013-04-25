@@ -1,6 +1,6 @@
 name: R Club
-baseurl: /r_club
-figurl: /r_club/figure
+baseurl: /r_club-dev
+figurl: /r_club-dev/figure
 permalink: pretty
 pygments: true
 markdown: redcarpet
