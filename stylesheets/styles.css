@@ -315,6 +315,10 @@ pre {
     margin-bottom: 32px;
 }
 
+code {
+  padding: 2px 2px;
+  background: #FDFEFB;
+}
 
 /* Tables */
 
@@ -486,6 +490,10 @@ a.buttons:hover {
 }
 
 .related {
+    text-align: right;
+}
+
+.author {
     text-align: right;
 }
 

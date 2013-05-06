@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class = "duedate">
+  {% if page.duedate %}
+    <h3>due by: {{ page.duedate }}</h3>
+  {% endif %}
+</div>
+
+<div class = "related">
+  {% if page.related %}
+    {% for related in page.related %}
+      {% for post in site.posts %}
+        {% capture converted %}{{ related | replace_first:'-','/' | replace_first:'-','/' | replace_first:'-','/' | remove: '.md' }}{% endcapture %}
+        {% if post.url contains converted %}
+         related: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class = "author">
+  {% if page.author %}
+    posted by: {{ page.author }}
+  {% endif %}
+</div>
+
+<div class="content">
+  <div id="post">
+    {{ content }}
+  </div>
+</div>
